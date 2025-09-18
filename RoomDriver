@@ -1,0 +1,32 @@
+/**
+ *
+ * @author Angie T
+ */
+import java.util.Scanner;
+public class RoomDriver {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        Scanner userInput = new Scanner(System.in);
+        
+        System.out.println("Enter the length of the room: ");
+        double length = userInput.nextDouble();
+        
+        System.out.println("Enter the width of the room: ");
+        double width = userInput.nextDouble();
+        
+        System.out.println("Enter the cost per square feet: ");
+        double cost = userInput.nextDouble();
+        
+        RoomDimension room = new RoomDimension(length, width);
+        
+        RoomCarpet roomCarpet = new RoomCarpet(room, cost);
+        
+        System.out.println("\nThe total cost is: $" + roomCarpet.getTotalCost());
+        
+        
+        
+        
+    }
+}
