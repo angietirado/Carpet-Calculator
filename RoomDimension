@@ -1,0 +1,23 @@
+/**
+ *
+ * @author Angie T
+ */
+public class RoomDimension {
+    private double length;
+    private double width;
+    
+    public RoomDimension(double len, double wid){
+        length = len;
+        width = wid;
+    }
+    
+    public double getArea(){
+        return length * width;
+    }
+    
+    @Override
+    public String toString(){
+        return String.format("The total area is: ", getArea());
+    }
+    
+}
