@@ -1,0 +1,23 @@
+/**
+ *
+ * @author Angie T
+ */
+public class RoomCarpet {
+    private RoomDimension size;
+    private double carpetCost;
+    
+    public RoomCarpet(RoomDimension dim, double cost){
+        size = dim;
+        carpetCost = cost;
+    }
+    
+    public double getTotalCost(){
+        return size.getArea() * carpetCost;
+    }
+    
+    @Override
+    public String toString(){
+        return String.format("The total cost is: ", getTotalCost());
+    }
+    
+}
